@@ -5,7 +5,15 @@ void setup(){
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){  
+
   background(255, 255, 255);
-  fill(255, 0, 255);
-  ellipse(36, 45, 12, 12); 
+  fill(mouseX, mouseY - 100, 255);
+  ellipse(mouseX, mouseY, 12, 12); 
+
+  textSize(40);
+  textFont(createFont("Comic Sans MS"));
+  fill(mouseX - 200, mouseY - 200, 255);
+  var label = "mouseX" + " , " + "mouseY";
+  text(label, 150, 380);
+  
 };
