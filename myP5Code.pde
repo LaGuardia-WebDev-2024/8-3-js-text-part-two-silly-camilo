@@ -13,7 +13,7 @@ draw = function(){
   textSize(40);
   textFont(createFont("Comic Sans MS"));
   fill(mouseX - 200, mouseY - 200, 255);
-  var label = "mouseX" + " , " + "mouseY";
+  var label = mouseX + " , " + mouseY;
   text(label, 150, 380);
-  
+
 };
